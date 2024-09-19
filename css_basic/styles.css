@@ -1,8 +1,50 @@
+*{
+    box-sizing: border-box;
+}
 body{
     display: flex;
     flex-direction: column;
 }
+header > a{
+    font-size: 30px;
+}
+header > h1  {
+    display: block;
+    position: relative;
+    background-color:cadetblue;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+header p{
+    display: block;
+    background-color: cadetblue;
+    margin: 0;
+    position: relative;
+    bottom:0;
+    text-align: center;
+    color: white;
+}
+
+
+header nav{ 
+    display: block;
+    position: relative; 
+    background-color: cadetblue;
+    bottom: 17px;
+    padding: 12px;
+    text-align: center;
+}
+header nav ul li{
+    color: white;
+    padding: 10px;
+}
+header nav ul li:hover{
+    background-color: darkcyan;
+}
 main{
+    padding: auto;
     display: flex;
     flex-direction: row;
     flex: auto;
@@ -11,7 +53,23 @@ main article{
     flex: 2;
     overflow-y: auto;
 }
+main h3{
+    padding: 15px;
+}
 main aside{
     flex: 1;
-    overflow: auto;
+    overflow-y: auto;
+}
+main a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: darkcyan;
+    color: white;
+    border: 1px grey solid ;
+    padding: 5px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
