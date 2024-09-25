@@ -1,0 +1,504 @@
+/*Global Rules*/
+:root{
+    --main-color:#C271FF;
+    --secondary-color:#071629;
+    --sub-text-color:#07162965;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    font-family:"Source Sans 3", sans-serif;
+}
+
+i{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.purple{
+    color: var(--main-color);
+    font-weight: bold;
+}
+.title{
+    display: block;
+    font-size: 30px;
+    font-weight: 100;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+}
+/*End of Global Rules*/
+header{
+    background-image: url(images/Object.png);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: 120vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+nav img{
+    height: 45px;
+    padding: 10px;
+    margin-left:150px ;
+}
+nav ul{
+    display: flex;
+    padding: 10px;
+    margin: 0px 80px}
+
+nav ul li a {
+color: white;
+padding: 30px;
+font-size: 12px;
+font-weight: 600;
+}
+nav ul li a:hover{
+    border-bottom: 1px var(--main-color) solid ; 
+}
+main{
+    display: inline-block;
+}
+main section.landing{ 
+    display: flex; 
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+}
+main .landing .main-title{
+    display:block;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: -700px;
+
+}
+main section div.main-title >h1{
+    color: white;
+    font-size: 80px;
+    max-width: 100%;
+    display: flex;
+    left: 50px;
+
+}
+    
+main section span[class^="sub-title"]{
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 20px 35px 18px 40px;
+    margin: 16px 5px;
+    color: white;
+    text-align: center;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+
+}
+.button{
+    display: block;
+    max-width: 100%;
+    background-color: var(--main-color);
+    padding: 13px;
+    font-size: 9px;
+    font-weight: bold;
+    border: none;
+    box-shadow: #303030 0px 1px 10px 1px;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    color: white;
+    transform: translate(50%,-50%);
+    -webkit-transform: translate(50%,-50%);
+    -moz-transform: translate(50%,-50%);
+    -ms-transform: translate(50%,-50%);
+    -o-transform: translate(50%,-50%);
+} 
+main .landing .main-title button{
+    margin-left:25%;
+}
+main section div.pros{
+    display: block;
+    position: absolute;
+    top: -30px;
+    bottom: 68px;
+    right: 55%;
+    max-width: 100%;
+    align-content: center;
+}
+main section .pros h2{
+    font-weight: 100;
+    font-size: 30px;
+    color: white;
+    transform: translate(80%, -355px);
+    -webkit-transform: translate(80%, -355px);
+    -moz-transform: translate(80%, -355px);
+    -ms-transform: translate(80%, -355px);
+    -o-transform: translate(80%, -355px);
+}
+
+main  .professors{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    transform:translateX(-10%) ;
+    -webkit-transform:translateX(-10%) ;
+    -moz-transform:translateX(-10%) ;
+    -ms-transform:translateX(-10%) ;
+    -o-transform:translateX(-10%) ;
+}
+main section .professors div.pross1{
+    display:block;
+    margin-right: 100px;
+    color: white;
+    text-align: center;
+}
+main section .professors div.pross1 h3{
+font-size: 16px;
+margin-top: 5px;
+
+}
+main section .professors div.pross1 p{
+    font-size: 13px;
+    font-weight: 100;
+    }
+main section .professors div.pross2{
+    display:block;
+    margin-right: 100px;
+    color: white;
+    text-align: center;
+
+}
+main section .professors div.pross2 h3{
+    font-size: 16px;
+    margin-top: 5px;
+
+    }
+    main section .professors div.pross2 p{
+        font-size: 13px;
+        font-weight: 100;
+        }
+main section .professors div.pross3{
+    display:block;
+    margin-right: 100px;
+    color: white;
+    text-align: center;
+
+}
+main section .professors div.pross3 h3{
+    font-size: 16px;
+    margin-top: 5px;
+
+    }
+    main section .professors div.pross3 p{
+        font-size: 13px;
+        font-weight: 100;
+    }
+main section .professors div.pross3 > img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+main section .professors div.pross4{
+    display:block;
+    margin-right: 100px;
+    color: white;
+    text-align: center;
+
+}
+main section .professors div.pross4 h3{
+    margin-top: 5px;
+    font-size: 16px;
+    }
+    main section .professors div.pross4 p{
+        font-size: 13px;
+        font-weight: 100;
+    }
+    main section.qoute-sec{
+        display: flex;
+        position: relative;
+        background-color: var(--main-color);
+        padding:50px;
+        flex: 2;
+        justify-content:center ;
+        align-items: center;
+    }
+    main section.qoute-sec img{
+        padding: 20px;
+        width: 160px;
+    }
+    main section.qoute-sec blockquote{
+        padding-left: 30px;
+        font-size: 15px;
+        font-weight:lighter;
+        color: white;
+        margin-bottom: 20px;
+
+    }
+    main section.qoute-sec h3{
+        padding-left: 30px;
+        font-size: 14px;
+        font-weight:bold;
+        color: white;
+        margin-bottom: 5px;
+    }
+    main section.qoute-sec p{
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight:lighter;
+        color: white;    }
+    
+    main .tutorials{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 70px;
+        padding-bottom: 100px;
+    
+    }
+    main .tutorials h2{
+        display: flex;
+        flex: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section.tutorials div[class^="videos"]{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 10%;
+        flex-wrap: nowrap;
+        padding: 0 10px;
+    }
+    main section.tutorials div[class^="videos"]::after{
+        content: url(images/play.png);
+        display: block;
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        transform: translate(25%, -20%);
+        width: 50px;
+        height: 50px;
+        z-index: 3;
+        opacity: 2.5px;
+        
+}
+    main section.tutorials div[class^="videos"] h3{
+        padding: 10px 10px;
+    }
+    main section.tutorials div[class^="videos"]> p{
+        padding-bottom: 10px;
+        padding-left: 10px;
+        color: var(--sub-text-color);
+    }
+    main section.tutorials div img[src^="images/1.png"]{
+        position: relative;
+        width: 50px;
+    }
+
+    main section.tutorials .videos div.user {
+        display: flex;
+        color: var(--main-color);
+        padding-left: 15px;
+
+    }
+    main section.tutorials .videos div.user h4{
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+    main section.tutorials div.videos img[src^="images/rating.png"] {
+        display: inline-flex;
+        padding: 20px;
+    }
+    main section.tutorials .videos div.rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--main-color);
+        text-align: center;
+    }
+    main section.tutorials .videos div.rating .time {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+        main section.membership{
+            display: flex;
+            position: relative;
+            background-color: var(--secondary-color);
+            color: white;
+            align-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: center;
+            padding: 100px;
+        }
+        main section.membership h2{
+            display: flex;
+            flex: 100%;
+            position: absolute;
+            top: 0;
+            justify-content: center;
+            padding: 20px;
+            flex-wrap: nowrap;
+            flex-direction:row ;
+        }
+        main section.membership .member{
+            display: flex;
+            flex: 10%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+        }
+        main section.membership button{
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            margin-bottom: 50px;
+        }
+        main section .member img[src^="images/smile.png"]{
+            padding: 10px;
+        }
+        main section .member h3{
+            font-weight: 400;
+            font-size: 16px;
+            margin: 10px;
+            text-align: center;
+        }
+        main section .member p{
+            line-height: 1.8;
+            margin: 10px;
+            font-size: 13px;
+            font-weight: 300;
+            text-align: center;
+}
+main section.qs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+main section.qs h2{
+    position: relative;
+    font-size: 50px;
+    font-weight: 300;
+    padding: 0 ;
+}
+main section.qs div.content{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding:50px 100px;
+    justify-content: center;
+    flex: 2;
+    flex-wrap: wrap;
+}
+main section.qs .content div[class^="fqs"]{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 50%;
+    padding: 10px 20px;
+}
+main section.qs .content div[class^="fqs"] h3{
+    display: flex;
+    padding: 40px;
+}
+main section.qs .content div[class^="fqs"] p{
+    display: flex;
+    color: var(--sub-text-color);
+    justify-content: flex-start;
+    padding-left: 40px;
+    width: 450px;
+}
+footer{
+    position: relative;
+    background-color: var(--secondary-color);
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: row;
+}
+
+
+footer .container section.foot{
+    
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+footer .container p{
+    display: flex;
+    position: absolute;
+    flex: 100%;
+    /* transform: translateY(75px); */
+    left: 45%;
+    top: 85%;
+    text-align: center;
+    font-size: 12px;
+    color: #565657;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+footer .container section.foot img{
+display: flex;
+}
+footer .container section.foot div.social{
+    position: absolute;
+    left: 50%;
+
+}
+footer .container section.foot div.social i{
+display: flex;
+position: absolute;
+}
+
+
+
+
+
