@@ -1,0 +1,179 @@
+/*Start global*/
+:root{
+    --main-color:#FF6565;
+    --sec-color:#071629;
+    --opacity:0.9;
+}
+@media (max-width:480px) {
+    body{
+        max-width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    header{
+        max-width: 100%;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding:40px;
+    }
+    header nav ul li{
+        /* display: none; */
+    }
+    header nav img.logo{
+        align-content: center;
+        align-items: center;
+        position: absolute;
+        max-width: 100%;
+        left: 30%;
+        top: 20px;
+
+    }
+    header nav img.section{
+        width: 45px;
+        display: block;
+        /* max-width: 100%; */
+        position: absolute;
+        left: 15px;
+        padding: 7px;
+        top: 15px;
+        /* align-items: center; */
+        align-content: center;
+    }
+    /* header nav img.section li:hover {
+            background-color: pink;
+            display: block;
+            position: absolute;
+            left: 0;
+
+    } */
+    }
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    /* max-width: 1000px; */
+    align-items:center ;
+    text-align: center;
+    align-content: center;
+    font-family: 'Source Sans 3', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+
+.desc{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 20px;
+    text-align: center;
+    padding:20px auto ;
+}
+/*End global*/
+
+header{
+    background-image: url(images/images/headphones_hero_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    margin: 0 200px;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+}
+header nav ul li a{
+    margin: 0 10px;
+    color: white;
+}
+@media (min-width:480px) {
+    header nav img.section{
+        display: none;}
+} 
+header nav ul li a:hover{
+    color: var(--main-color);
+}
+header nav ul li{
+    margin: 0 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+header nav img{
+    height: 32px;
+}
+
+
+header section{
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+}
+header section .landing h1{
+    color: white;
+    margin: 10px auto;
+    font-size: 32px;
+    font-weight: 700;
+
+}
+header section .sub-title > p{
+    color: white;
+    margin-bottom:20px ;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+header section .landing button{
+    border: none;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    color: white;
+    background-color: var(--main-color);
+    padding:10px 20px;
+    margin:20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    align-items: center;
+    text-transform:uppercase;
+    box-shadow: #303030 0px 1px 10px 1px;
+}
+header section div.desc{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 20px;
+    text-align: center;
+    padding:20px auto ;
+}
+@media (max-width:480px) {
+    body{
+        max-width: 1000px;
+    }
+} 
+
+
+
+
+
+
+
