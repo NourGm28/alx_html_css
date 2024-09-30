@@ -1,0 +1,101 @@
+:root{
+    --main-color:#FF6565;
+    --sec-color:#071629;
+    --opacity:0.9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    /* max-width: 1000px; */
+    align-items:center ;
+    text-align: center;
+    align-content: center;
+    font-family: 'Source Sans 3', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+
+.desc{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 20px;
+    text-align: center;
+    padding:20px auto ;
+}
+
+main section{
+    color: white;
+    display: grid;
+    position: relative;
+    background-image: url(images/images/headphones_hero_2.jpg);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main section div.second_section{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-auto-columns: 648px;
+}
+
+main section h2.title{
+    margin: 10px auto;
+    font-size: 32px;
+    font-weight: 700;
+    z-index: 2;
+}
+main section h3{
+    z-index: 2;
+    font-size: 46px;
+    font-weight:700 ;
+}
+main section  p{
+    z-index: 2;
+    font-size: 14px;
+    font-weight:400 ;
+}
+main section div[class^="parts"]{
+    display: grid;
+    grid-template-rows: repeat(autofill , minmax(100px , 1fr));
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+position: relative;
+
+}
+
+main section .parts::before{
+	/* content: url(images/images/pentagone.png); */
+	content: '';
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	clip-path: polygon( 50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+	width: 190px;
+	background: var(--main-color);
+	height: 190px;
+	transform:translateY(70%) ;
+	-webkit-transform:translateY(70%) ;
+	-moz-transform:translateY(70%) ;
+	-ms-transform:translateY(70%) ;
+	-o-transform:translateY(70%) ;
+	z-index: 1;
+}

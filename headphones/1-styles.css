@@ -1,0 +1,55 @@
+:root{
+    --main-color:#FF6565;
+    --sec-color:#071629;
+    --opacity:0.9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    /* max-width: 1000px; */
+    align-items:center ;
+    text-align: center;
+    align-content: center;
+    font-family: 'Source Sans 3', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+
+.desc{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 20px;
+    text-align: center;
+    padding:20px auto ;
+}
+
+main section .first_section{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(autofill , minmax(80px , 1fr));
+}
+main section h2.title{
+    margin: 10px auto;
+    font-size: 32px;
+    font-weight: 700;
+}
+main section div[class^="parts"]{
+    display: grid;
+    grid-template-rows: repeat(autofill , minmax(100px , 1fr));
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+
+}
