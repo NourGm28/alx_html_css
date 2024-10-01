@@ -1,0 +1,121 @@
+:root{
+    --main-color:#FF6565;
+    --sec-color:#071629;
+    --opacity:0.9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    /* max-width: 1000px; */
+    align-items:center ;
+    text-align: center;
+    align-content: center;
+    font-family: 'Source Sans 3', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+
+.desc{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 20px;
+    text-align: center;
+    padding:20px auto ;
+}
+
+main section{
+    display: grid;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main section div.third_section{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+main section h2.title{
+    margin: auto;
+    font-size: 32px;
+    font-weight: 700;
+    z-index: 2;
+}
+main section div.input-text{
+    display: grid;
+    padding: 30px;
+}
+main section div.input-text .name{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "name";
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    margin: 20px;
+    gap: 20px;
+    border: none;
+    border-bottom:solid 1px var(--sec-color);
+    padding: 5px;
+
+}
+main section div.input-text .email{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "name";
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    margin: 20px;
+    gap: 20px;
+    border: none;
+    border-bottom:solid 1px var(--sec-color);
+    padding: 5px;
+
+}
+main section div.input-text .message{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "name";
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    margin: 20px;
+    gap: 20px;
+    border: none;
+    border-bottom:solid 1px var(--sec-color);
+    padding: 5px;
+}
+input::placeholder{
+    font-weight: bold;
+    color: var(--sec-color);
+    opacity: 2;
+    line-height: 16.41px;
+    font-size: 12px;
+}
+
