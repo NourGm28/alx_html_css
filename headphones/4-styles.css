@@ -80,4 +80,7 @@ footer .container section.foot div.social{
 footer .container section.foot div.social i{
 display: flex;
 position: absolute;
+justify-content: space-between;
+align-items: center;
+align-content: center;
 }
